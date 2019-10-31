@@ -40,6 +40,10 @@ Workstation是用来安装ESXi的。安装ESXi成功后，只要保证Workstatio
 
 workstation中的虚拟机是会占用鼠标的，按ctrl+alt即可将鼠标焦点从workstation虚拟机中移出。如果安装程序超过2分钟还没有自动启动，重启workstation中的ESXi虚拟机
 
+## 安装ESXi时的IP如何配置
+
+ESXi的IP不需要特殊配置，使用DHCP分配的动态IP即可。请注意，此IP只在虚拟机中可以有有效访问
+
 ## 如何登录vSphere Client
 
 安装[vSpehre Client](http://course.buaa.edu.cn/access/content/group/b7656edd-6e82-4c48-80b3-c9397cf89f72/%E4%BA%91%E5%AE%9E%E9%AA%8C%E8%B5%84%E6%BA%90/VMware-viclient-all-6.0.0.exe)成功后，打开vSphere Client，输入ESXi显示的IP，以及安装ESXi过程中设置的账号密码即可登录。
