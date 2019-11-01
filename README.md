@@ -57,3 +57,7 @@ ESXi的IP不需要特殊配置，使用DHCP分配的动态IP即可。请注意�
 ![web_client_error](img/web_client_error.png)
 
 按ESC键忽略此错误即可
+
+## 创建用户时提示“用户名或密码格式无效”的解决方法
+
+密码要求包含数字、大小写字母以及符号，缺一不可
