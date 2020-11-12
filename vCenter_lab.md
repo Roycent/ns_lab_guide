@@ -41,6 +41,10 @@
     ![](img/vcenter_addhosts.png)
 10、 将虚拟机A、虚拟机B上的ESXi均添加到vCenter中。添加完成后，可以查看并管理两个ESXi上的虚拟机。（添加虚拟机A上的ESXi时，使用的是10.251开头的地址，添加虚拟机B上的ESXi主机时，使用的是192.168开头的地址）
 
+### 单人进行实验
+
+安装vCenter Server的步骤不变，无需设置端口转发。除之前实验创建的ESXi虚拟机之外，还需要再创建一个ESXi虚拟机。然后将这两个ESXi主机都加入到集群中。
+
 ## 其他提示/建议
 
 1、建议通过Web Client（浏览器直接访问）使用Flash访问，或者使用vSphere Client（如果连接时没有报错的话）。
@@ -52,7 +56,7 @@
 
 ### 虚拟机A在添加NAT端口转发后，外网（实体机）仍然无法通过虚拟机地址访问ESXi服务
 
-windows+R -> services.msc 打开服务窗口，查看`VMware NAT Service`是否正在运行。如果不在运行，尝试启动该服务。如果启动过程中报错，重启虚拟机。
+windows+R -> services.msc 打开服务窗口，查看`VMware NAT Service`是否正在运行。如果不在运行，尝试启动该服务。如果启动过程中报错，重启虚拟机。**重启后，ESXi虚拟机并不会自动启动，需要手动恢复**
 
 ### 虚拟机B在安装vCenter Server时，提示某端口被占用
 
