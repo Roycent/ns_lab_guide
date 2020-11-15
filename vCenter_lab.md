@@ -46,7 +46,7 @@
 7、 vCenter Server所需的端口。第1~2步执行完毕后，此步骤应该可以直接完成。如果点击下一步时提示某个端口被占用，在cmd中执行`netstat -ano | findstr "{port_num}"`即可找到占用端口的进程（把`{port_num}`替换为相应的端口号，注意两侧有引号），然后打开任务管理器-详细信息找到对应进程号的进程并结束即可。**不推荐**更改默认端口号。
     ![](img/vcenter_ports.png)
 
-8、 安装完成后，浏览器访问虚拟机地址或者使用vSphere Client均可访问到vCenter。账号为`adminstrator@vsphere.local`，密码为第6步中设置的密码。
+8、 安装完成后，浏览器访问虚拟机地址或者使用vSphere Client均可访问到vCenter。账号为`administrator@vsphere.local`，密码为第6步中设置的密码。
 
 9、 登录到vCenter，创建数据中心、并选择添加主机。在添加主机时会弹出安全警示，选择“是”继续添加即可。
     ![](img/vcenter_addhosts.png)
